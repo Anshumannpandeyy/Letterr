@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message For You 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Petals Background -->
+    <div class="petals-container"></div>
+    
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container"></div>
+
+    <!-- Music Button -->
+    <button class="music-btn" id="musicBtn" title="Toggle Music">
+        <span class="music-icon">🎵</span>
+    </button>
+    
+    <!-- Audio Element -->
+    <audio id="backgroundMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-small-text">A message for you</p>
+            <h1 class="hero-title">Anshika</h1>
+            <p class="hero-subtitle">
+                There are things I should have said sooner.<br>
+                This is my attempt.
+            </p>
+            <button class="btn btn-primary" onclick="document.getElementById('memories').scrollIntoView({ behavior: 'smooth' })">
+                Read My Heart 🌹
+            </button>
+            
+            <!-- Live Counter -->
+            <div class="counter-container">
+                <p class="counter-label">Seconds since I started missing you</p>
+                <div class="counter-display" id="counter">0</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Memory Cards Section -->
+    <section class="memories" id="memories">
+        <h2 class="section-title">Everything I never said</h2>
+        <div class="cards-grid">
+            <div class="memory-card">
+                <p>I know I hurt you.<br>And I hate myself for it more than you know.</p>
+            </div>
+            <div class="memory-card">
+                <p>You deserved better from me.<br>Better patience. Better honesty. Better love.</p>
+            </div>
+            <div class="memory-card">
+                <p>Even after every fight, my heart still chooses you.<br>That part has never been in question.</p>
+            </div>
+            <div class="memory-card">
+                <p>I miss us.<br>The late nights. The laughter. The comfort.</p>
+            </div>
+            <div class="memory-card">
+                <p>You are still my favourite person.<br>That hasn't changed.</p>
+            </div>
+            <div class="memory-card">
+                <p>I'm sorry for the pain I caused.<br>You deserved softness, always.</p>
+            </div>
+            <div class="memory-card">
+                <p>I would still choose you in every universe.<br>Every single one. Without hesitation.</p>
+            </div>
+            <div class="memory-card">
+                <p>Please don't let this be our ending.<br>We are worth more than this silence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- One Last Thing Section -->
+    <section class="one-last-thing" id="oneLast">
+        <div class="one-last-content">
+            <h2 class="section-title">One last thing from me...</h2>
+            <p class="final-message">Miss you</p>
+        </div>
+    </section>
+
+    <!-- Forgiveness Meter Section -->
+    <section class="forgiveness-meter" id="forgiveness">
+        <div class="meter-card">
+            <h3 class="meter-title">The Forgiveness Meter™</h3>
+            <p class="meter-subtitle">Initializing quantum love sensors...</p>
+            
+            <div class="meter-container">
+                <div class="meter-fill" id="meterFill"></div>
+                <div class="meter-percentage" id="meterPercentage">0%</div>
+            </div>
+            
+            <p class="meter-status" id="meterStatus">Calibrating...</p>
+        </div>
+    </section>
+
+    <!-- Final Section -->
+    <section class="final-section" id="final">
+        <div class="final-content">
+            <div class="rose-emoji">🌹</div>
+            <h2 class="final-title">You are still my favourite</h2>
+            <p class="final-text">
+                In every version of this life, in every universe that exists — 
+                I would still choose you.
+            </p>
+            <p class="signature">With everything I have, — Anshuman</p>
+            
+            <button class="btn btn-primary" id="shareBtn">
+                Share This Letter 🌹
+            </button>
+            
+            <div class="system-overload">
+                <p>System Overload ✨</p>
+                <p class="overload-text">Too much beauty detected. The universe cannot process this much cuteness.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
