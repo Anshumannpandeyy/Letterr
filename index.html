@@ -4,124 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Message For You 💕</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <!-- Floating Petals Background -->
+
+<body style="opacity:0">
+
+    <!-- Background FX -->
     <div class="petals-container"></div>
-    
-    <!-- Floating Hearts Background -->
     <div class="hearts-container"></div>
 
-    <!-- Music Button -->
-    <button class="music-btn" id="musicBtn" title="Toggle Music">
-        <span class="music-icon">🎵</span>
-    </button>
-    
-    <!-- Audio Element -->
+    <!-- Music -->
+    <button class="music-btn" id="musicBtn">🎵</button>
+
     <audio id="backgroundMusic" loop>
-        <source src="music.mp3" type="audio/mpeg">
+        <source src="ishq-wala-love.mp3" type="audio/mpeg">
     </audio>
 
-    <!-- Hero Section -->
+    <!-- HERO -->
     <section class="hero" id="hero">
         <div class="hero-content">
+
             <p class="hero-small-text">A message for you</p>
             <h1 class="hero-title">Anshika</h1>
+
             <p class="hero-subtitle">
                 There are things I should have said sooner.<br>
                 This is my attempt.
             </p>
-            <button class="btn btn-primary" onclick="document.getElementById('memories').scrollIntoView({ behavior: 'smooth' })">
+
+            <!-- FIX: JS HOOK ADDED -->
+            <button class="btn btn-primary read-heart-btn">
                 Read My Heart 🌹
             </button>
-            
-            <!-- Live Counter -->
+
             <div class="counter-container">
                 <p class="counter-label">Seconds since I started missing you</p>
                 <div class="counter-display" id="counter">0</div>
             </div>
+
         </div>
     </section>
 
-    <!-- Memory Cards Section -->
+    <!-- MEMORIES -->
     <section class="memories" id="memories">
         <h2 class="section-title">Everything I never said</h2>
+
         <div class="cards-grid">
-            <div class="memory-card">
-                <p>I know I hurt you.<br>And I hate myself for it more than you know.</p>
-            </div>
-            <div class="memory-card">
-                <p>You deserved better from me.<br>Better patience. Better honesty. Better love.</p>
-            </div>
-            <div class="memory-card">
-                <p>Even after every fight, my heart still chooses you.<br>That part has never been in question.</p>
-            </div>
-            <div class="memory-card">
-                <p>I miss us.<br>The late nights. The laughter. The comfort.</p>
-            </div>
-            <div class="memory-card">
-                <p>You are still my favourite person.<br>That hasn't changed.</p>
-            </div>
-            <div class="memory-card">
-                <p>I'm sorry for the pain I caused.<br>You deserved softness, always.</p>
-            </div>
-            <div class="memory-card">
-                <p>I would still choose you in every universe.<br>Every single one. Without hesitation.</p>
-            </div>
-            <div class="memory-card">
-                <p>Please don't let this be our ending.<br>We are worth more than this silence.</p>
-            </div>
+
+            <div class="memory-card">I know I hurt you.</div>
+            <div class="memory-card">You deserved better from me.</div>
+            <div class="memory-card">My heart still chooses you.</div>
+            <div class="memory-card">I miss us.</div>
+            <div class="memory-card">You are still my favourite person.</div>
+            <div class="memory-card">I'm sorry for the pain.</div>
+            <div class="memory-card">I would still choose you.</div>
+            <div class="memory-card">Please don't let this end.</div>
+
         </div>
     </section>
 
-    <!-- One Last Thing Section -->
+    <!-- ONE LAST THING -->
     <section class="one-last-thing" id="oneLast">
+
+        <h2 class="section-title">One last thing...</h2>
+
+        <!-- IMPORTANT: JS SAFE LONG TEXT BOX -->
         <div class="one-last-content">
-            <h2 class="section-title">One last thing from me...</h2>
-            <p class="final-message">Miss you</p>
+            <p class="final-message">
+                Miss you
+            </p>
         </div>
+
     </section>
 
-    <!-- Forgiveness Meter Section -->
+    <!-- FORGIVENESS METER -->
     <section class="forgiveness-meter" id="forgiveness">
+
         <div class="meter-card">
-            <h3 class="meter-title">The Forgiveness Meter™</h3>
-            <p class="meter-subtitle">Initializing quantum love sensors...</p>
-            
+
+            <h3 class="meter-title">Forgiveness Meter</h3>
+
             <div class="meter-container">
                 <div class="meter-fill" id="meterFill"></div>
                 <div class="meter-percentage" id="meterPercentage">0%</div>
             </div>
-            
+
             <p class="meter-status" id="meterStatus">Calibrating...</p>
+
         </div>
+
     </section>
 
-    <!-- Final Section -->
+    <!-- FINAL -->
     <section class="final-section" id="final">
+
         <div class="final-content">
+
             <div class="rose-emoji">🌹</div>
+
             <h2 class="final-title">You are still my favourite</h2>
+
             <p class="final-text">
-                In every version of this life, in every universe that exists — 
-                I would still choose you.
+                In every version of this life — I would still choose you.
             </p>
-            <p class="signature">With everything I have, — Anshuman</p>
-            
+
+            <p class="signature">— Anshuman</p>
+
             <button class="btn btn-primary" id="shareBtn">
                 Share This Letter 🌹
             </button>
-            
-            <div class="system-overload">
-                <p>System Overload ✨</p>
-                <p class="overload-text">Too much beauty detected. The universe cannot process this much cuteness.</p>
-            </div>
+
         </div>
+
     </section>
 
-    <!-- Script -->
     <script src="script.js"></script>
+
 </body>
 </html>
